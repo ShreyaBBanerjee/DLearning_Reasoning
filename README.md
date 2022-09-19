@@ -8,6 +8,4 @@ The original dataset consists of sets of formulae in Conjunctive Normal Form (CN
 
 The 4X8 and 5X10 datasets consists of 10K samples each. We do a split with 75000 training data and 25000 test data. To implement a CNN model on this data, the samples are preprocessed into matrix form. LCNN is designed to have 1 convolutional layer, ReLu activation function, 1 pooling layer followed by a fully connected layer. The output is fed into a standard 2-way softmax in order to perform the classification task. We use Adam optimizer.
 
-The model is able to predict with ~93% accuracy for 4x8 and ~83% on 5x10 datasets, approximately. With lesser data the model overfits badly. The best results are obtained by running 200 epochs of training with a learning rate of .0005. As we note 
-	in the figure below, the loss converges steadily for each fold while accuracy 
-	peaks to 91\% on 5x10 dataset.
+The model is able to predict with ~93% accuracy for 4x8 and ~83% on 5x10 datasets, approximately. With lesser data the model overfits badly. The best results are obtained by running 7500 epochs of training with a batch size 10 and learning rate of 0.0005. As we note in the given figure, the loss converges steadily to  while accuracy peaks to ~93% on 4x8 dataset.
